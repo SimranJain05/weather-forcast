@@ -1,0 +1,115 @@
+body{
+    /* background: #8C52FF; */
+    /* background-image: linear-gradient(to bottom right ,#5582ea, #ba9ff2 , #4054bb , #4533e0); */
+
+    background-image: linear-gradient(to bottom right , #fab2ff , #1904e5 );
+
+    /* background-image: linear-gradient(to bottom right , #4158d0, #c850c0, #ffcc70); */
+
+    /* background-image: url(./images/Wallpaper\ 4K\ Clouds\ Ideas.gif); */
+    background-size: cover; /* Cover the entire body */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#weather-container{
+    background: rgba(255,255,255,0.3);
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+    overflow: hidden;
+}
+
+
+h2, label , p{
+    color: #ffffff;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+input{
+    width: calc(100% - 25px);
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin-top: 20px;
+    background: transparent;
+}
+
+button{
+    background: #debff4;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100px;
+    font-size: 15px;
+}
+
+button:hover{
+    background: #8b48d7;
+}
+
+#temp-div p{
+    font-size: 60px;
+    margin-top: -30px;
+}
+
+#weather-info{
+    font-size: 20px;
+}
+
+#weather-icon{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 10px;
+    margin-bottom: 0;
+    display: none;
+}
+
+#hourly-forecast{
+    margin-top: 50px;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hourly-item{
+    flex: 0 0 auto;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    color: white;
+}
+
+.hourly-item img{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+#hourly-heading{
+    color: #fff;
+    margin-top: 10px;
+}
+
+#date-div p{
+    font-size: 20px;
+    margin-top: 25px;
+}
